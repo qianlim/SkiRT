@@ -11,7 +11,7 @@ Qianli Ma, Jinlong Yang, Michael J. Black and Siyu Tang <br>[Paper](https://ps.i
 
 ## News
 
-[Sept 14, 2022] Part of the code will include a refactored (improved) version of our previous paper, [POP (ICCV 2021)](https://github.com/qianlim/POP). The full code will be available before the end of September 2022. Stay tuned!
+[Sept 14, 2022] Part of the code will include a refactored (improved) version of our previous paper, [POP (ICCV 2021)](https://github.com/qianlim/POP). The full code will be available before the end of ~~September~~ November 2022. Stay tuned!
 
 
 
