@@ -1,0 +1,35 @@
+shape_decoder:
+  in_size: 3
+  hsize: 256
+  actv_fn: softplus
+  batchnorm: true
+  num_layers: 8
+  branch_at: 5
+  skip_layer: 5
+
+shape_decoder_coarse:
+  in_size: 3
+  hsize: 256
+  actv_fn: softplus
+  batchnorm: true
+  num_layers: 6
+  branch_at: 4
+  skip_layer: 4
+
+lbs_net_scanimate:
+  use_embed: true
+  d_size: 6
+  g_dim: 0
+  clo_feat_dim: 64
+  mlp:
+    ch_dim:
+      - 2 # in case no positional embedding used, the first layer dim = clo_feat_dim+3 (i.e. 3d coord of query point)
+      - 256
+      - 256
+      - 256
+      - 0 # =number of body joints, will be set in the network init according to which body model (smpl/smplx) is used
+    res_layers:
+      - 2
+    nlactiv: leakyrelu
+    norm: none
+    last_op: softmax

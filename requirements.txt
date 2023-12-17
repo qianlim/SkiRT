@@ -1,0 +1,8 @@
+configargparse
+trimesh>=3.8
+open3d>=0.12
+tensorboard
+torch
+pytorch3d
+numpy
+
